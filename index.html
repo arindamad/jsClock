@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>try to give stylesheet useing css</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="this">
+    <section class="bannerPanel">
+        <div class="owl-carousel  myowlcarousel">
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/6.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/7.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="full itemInner">
+                    <img src="images/8.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="BannerTxt">
+            <h2>Welcome to Arindam's world</h2>
+            <div class="Timer" id="time">
+                <ul>
+                    <li id="hours">10</li>
+                    <li id="minute">30</li>
+                    <li id="second">20</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="js/clock.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dfsd').owlCarousel({
+                margin: 0,
+                loop: true,
+                items: 1,
+                dots: false,
+                navs: false,
+                // smartSpeed: 450
+            });
+            $('.myowlcarousel').owlCarousel({
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                items: 1,
+                margin: 0,
+                stagePadding: 0,
+                autoplay: true,
+                dots: true
+            });
+        });
+    </script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            var body = $('body').attr('class');
+            // alert(body);
+            if (body == 'this') {
+                $("link").before(`
+<style type="text/css" rel="stylesheet">
+        :root {
+            --mainColor2: coral;    
+            --mainColor: red;
+        }
+</style>
+                                `);
+            } else {
+
+            }
+        });
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* your plugins be here */
+/* bases.dir your bases laouts form here */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; }
+
+section, .full {
+  width: 100%;
+  float: left; }
+
+a, button {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+/* banner laouts form here */
+.bannerPanel {
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+  .bannerPanel::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+  .bannerPanel .item {
+    width: 100%;
+    float: left; }
+    .bannerPanel .item .itemInner {
+      width: 100%;
+      float: left; }
+      .bannerPanel .item .itemInner img {
+        width: 100%;
+        display: block;
+        height: 100vh;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover; }
+  .bannerPanel .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .bannerPanel .BannerTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    width: 100%;
+    z-index: 4;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff; }
+    .bannerPanel .BannerTxt h2 {
+      font-size: 40px;
+      color: inherit; }
+    .bannerPanel .BannerTxt .Timer {
+      width: 100%;
+      float: left;
+      text-align: center; }
+      .bannerPanel .BannerTxt .Timer ul {
+        display: inline-block; }
+        .bannerPanel .BannerTxt .Timer ul li {
+          width: 90px;
+          float: left;
+          font-family: 'Bungee Inline', cursive;
+          font-size: 50px;
+          position: relative;
+          margin-right: 19px; }
+          .bannerPanel .BannerTxt .Timer ul li::after {
+            content: ":";
+            position: absolute;
+            top: 50%;
+            right: -19px;
+            -moz-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+          .bannerPanel .BannerTxt .Timer ul li:last-child {
+            margin-right: 0px; }
+          .bannerPanel .BannerTxt .Timer ul li:last-child::after {
+            display: none; }
+
+/* Your moudle be her*/
+
+/*# sourceMappingURL=app.css.map */
